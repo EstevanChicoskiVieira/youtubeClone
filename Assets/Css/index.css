@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family= Saira+Condensed:wght@600 & display = swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #da2323e8;
+    --backgroundPrimary: #0f0f0f;
+    --backgroundSecondary: #171718fa;
+}
+
+.menu-fixo{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--backgroundSecondary);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.8px solid #4b4b4b;
+}
+
+.menu-fixo-1{
+    width: 15%;
+    height: 100%;
+    display: flex;
+}
+
+.menu-hamburger{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-youtube{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-youtube span{
+    cursor: pointer;
+}
+
+.logo-youtube span a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 2px;
+}
+
+.logo-youtube h1{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 15pt;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: -1px;
+    font-weight: 680;
+    padding-top: 1.2vh;
+}
+
+.menu-fixo-2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.barra-pesquisa{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-pesquisa input{
+    width: 100%;
+    height: 6vh;
+    background-color: var(--backgroundSecondary);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #353535;
+    padding-left: 15px;
+    color: grey;
+    font-size: 12pt;
+    font-weight: 550;
+}
+
+.barra-pesquisa input:focus{
+    border: 1px solid #808080;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.barra-pesquisa label button{
+    height: 6vh;
+    width: 5vw;
+    border: none;
+    background-color: #353535;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.barra-pesquisa label button:focus{
+    background-color: #424242;
+}
+
+.pesquisa-voz{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa-voz span{
+    width: 6vh;
+    height: 6vh;
+    background-color: #2c2c2c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-fixo-3{
+    width: 18%;
+    height: 100%;
+    display: flex;
+}
+
+.ultilitarios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.perfil button{
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    border-radius: 50%;
+    background: url(../Img/perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-lateral{
+    position: fixed;
+    margin-top: 10vh;
+}
+
+.menu-compacto{
+    width: 5vw;
+    height: 90vh;
+    background-color: var(--backgroundSecondary);
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.items:hover{
+    background-color: rgba(128, 128, 128, 0.212);
+}
+
+.menu-descompacto{
+    width: 20vw;
+    height: 90vh;
+    background-color: var(--backgroundSecondary);
+}
+
+main{
+    width: 100%;
+    height: 200vh;
+    background-color: var(--backgroundPrimary);
+    padding-left: 6vw;
+    padding-top: 12vh;
+}
+
+.card-video{
+    width: 22vw;
+    height: 45vh;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.card-video:hover{
+    border-radius: 5px;
+    background-color: #1a1919;
+}
+
+.thumb{
+    width: 100%;
+    height: 25vh;
+}
+
+.thumb img{
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+}
+
+.perfil{
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.perfil span{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.perfil span img{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+}
+
+.outros{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 11pt;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.video-info p{
+    font-size: 10pt;
+    color: #a0a0a0;
+}
+
+.tempo{
+    width: 20px;
+    height: 5px;
+    background-color: blue;
+}
+
+.line1{
+    display: flex;
+    gap: 2.3vh;
+}

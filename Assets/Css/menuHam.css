@@ -1,0 +1,50 @@
+#menu-h{
+    position: absolute;
+    opacity: 0;
+}
+
+.label{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 20px;
+}
+
+.label span{
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    border-radius: 30px;
+    background-color: #ffffff;
+    transition: 0.25s ease-in-out;
+}
+
+.label span:nth-child(1){
+    top: 0;
+}
+
+.label span:nth-child(2){
+    top: 6px;
+}
+
+.label span:nth-child(3){
+    top: 12px;
+}
+
+#menu-h:checked + .label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#menu-h:checked + .label span:nth-child(2){
+    opacity: 0;
+}
+
+#menu-h:checked + .label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
